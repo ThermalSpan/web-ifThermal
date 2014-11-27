@@ -4,7 +4,7 @@
 
 
 html { 
-  background: #000000 url(http://localhost:4000/images/nebula2.jpg) no-repeat center center fixed; 
+  background: #000000 url({{ site.url }}/images/nebula2.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -113,7 +113,26 @@ ul {
     background-color: #ffffff;
 }
 
+#post-list {
+    width: 400px;
+    margin: 0 auto;
+    text-align: left;
+
+}
+
 #post {
 width: 800px;
 margin: 0 auto;
+text-align: left;
+}
+
+#post h1 {
+    text-align: center;
+}
+
+#post ul{
+     width: 650px;
+     margin: 0 auto;
+     list-style-type: circle;
+
 }
