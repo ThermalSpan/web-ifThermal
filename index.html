@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        " » "
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
+
+<div id="about" class="dark-div">
+    <h1>About Me</h1>
+                <img src="images/profile.png" alt="profile picture">
+                <h3>Russell Bentley</h3>
+                <p>I'm a student at the University of Connecticut, where I am curently pursuing a double degree in Mathematics and Computer Science. The field of High Performance Computing is of great interst to me. If you are interested in seeing my work, please check out my github. I also write about current pursuits on my blog. 
+                </p>
+
+           </div>
+        
+
