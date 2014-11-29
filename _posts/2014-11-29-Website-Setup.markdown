@@ -19,7 +19,16 @@ When it came time to put my site onto bluehost things went smoothly. I used ftp 
 
 I keep the jekyll project for my website under version control, the repository is publically available on my github. Using a git hook seemed to be the way to go as far as automating the transfer of files to the server. So i wrote a script to do it, which can be found here. Note, that I decided to use a config file to store the information about username and passwords for ssh access. While this is not the most secure option, the config file should be relativley safe on my machine. Please contact me if this solution rubs you wrong and you know of a better option. 
 
+Just to be clear, the config file looks like this:
 ```bash
-test
+#!/bin/bash
+sshuser=user
+domain=example.com
+password=12345
 ```
+
+Then on a pre-push commit I run the following:
+
+
+If you check out the script on github you may have noticed my extensive use of the the printf. For personal scripts I make extensive use of printf becuase it allows me to color and formate text better than echo. I like to use print statements like comments since they need to provide readibility to the code, and understandability for any errors that occur during the running of the script.  
 
