@@ -47,9 +47,9 @@ ul {
 }
 
 #menu ul {
-    margin: 10px auto;
-    padding: 10px;
-    width: 50%;
+    margin: 10px auto; 
+    padding: 10px; 
+    width: 50%; 
     border-top: 3px solid #ffffff;
     border-bottom: 3px solid #ffffff;
     border-radius: 10px;
@@ -121,7 +121,9 @@ ul {
 }
 
 #post {
-width: 800px;
+font-family: Times;
+font-weight: normal;
+width: 650px;
 margin: 0 auto;
 text-align: left;
 }
