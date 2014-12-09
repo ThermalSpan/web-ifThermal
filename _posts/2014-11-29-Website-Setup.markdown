@@ -19,8 +19,8 @@ After I had a rough [prototype](https://github.com/ThermalSpan/web-experiments) 
 
 The next step was to automate the process of updating the web server whenever I made a change to the site. I will save the details of how I arrived at the following solution, I will merely say that I could not get jekyll to work on the server and leave it at that. The major point is that I now have two repositories for this website,one for Jekyll and the other for the site build. These are [web-ifThermal](https://github.com/ThermalSpan/web-ifThermal) and [web-ifThermal-site](https://github.com/ThermalSpan/web-ifThermal-site) respectivley. The webserver has a clone of the web-ifThermal-site repository. I created a soft-link from the repository to the public_html folder.
 
-       rm -r -f ~/public_html
-       ln -T ~/projects/web-ifThermal-site ~/public_html
+    rm -r -f ~/public_html
+    ln -T ~/projects/web-ifThermal-site ~/public_html
 
 Since I build the website locally, I wrote a pre-commit hook for the Jekyll repository that takes care of building and updating the site repository on both Gihub and the server. Here's what it does:
 
