@@ -142,10 +142,21 @@ text-align: left;
 }
 
 .icon-list li {
-    display: inline;
+    display: inline-block;
     padding-right: 20px;
 }
 
 #braceform {
-    font-height: 25px;
+    font-size: 25px;
+}
+
+#braceform label {
+    display: inline-block;
+    text-align: right;
+    width: 200px;
+}
+
+#braceform input {
+    display: inline-block;
+    font-size: 20px;
 }

@@ -11,7 +11,7 @@ tags:
 Website Setup
 =============
 
-Building this website presented a nice sequence of challenges for me. First, I have very little experience with the *html* and *css* combo. Secondly, I had to learn about stic site generators. Lastly I had to figure out a suitable setup for version control and pushing updates to the bluehost server I use. 
+Building this website presented a nice sequence of challenges for me. First, I still need to gain experience with the *html* and *css* combo. Secondly, I had to learn about stic site generators. Lastly I had to figure out a suitable setup for version control and pushing updates to the bluehost server I use. 
 
 Webdesign presents me with several challenges. The most prominent is that i'm not a designer. To overcome this challenge I decided to stick with simplicity. So, aside from the masking gimmick in the header I chose to implement a simple black and white theme. All the content lives in a single column. I tried to keep the extra fluff to a minimum. Expect more formatting and design updates as I gather feedback.
 
